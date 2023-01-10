@@ -1,0 +1,108 @@
+/*https://coolors.co/273043-9197ae-eff6ee-f02d3a-dd0426*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+body {
+    font-family: 'Noto Serif', serif;
+}
+
+.container {
+    background-color: #D6D6B1;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #780214;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+ 
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #780214;
+    background-color: #F46670;
+    border-radius: 25px;
+    padding: 5px 10px;
+    text-align: center;
+    
+}
+
+header nav a:hover {
+    color: black;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: #CECEA1;
+    align-items: center;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+footer {
+    background-color: #780214;
+    color: #F46670;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+@media (min-width:600px) {
+    body {
+    }
+
+    header nav {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    main {
+        display: flex;
+        gap: 50px;
+        margin: 0 30px;
+    }
+}
+
+/* Formulär */
+
+form {
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin: 0 auto;
+}
+
+.send-button-container {
+    margin: 0 auto;
+}
+
+.send-button-container input {
+    min-width: 100px;
+}
+
+label {
+    display: block;
+    padding-bottom: 5px;
+}
+
+@media (min-width:600px)  {
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+    .send-button-container {
+        grid-column: span 2;
+    }
+}
